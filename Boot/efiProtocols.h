@@ -1,0 +1,23 @@
+#pragma once
+
+#include "efiCallbacks.h"
+
+#define EFI_GRAPHICS_OUTPUT_PROTOCOL_GUID \
+ {0x9042a9de,0x23dc,0x4a38,\
+ {0x96,0xfb,0x7a,0xde,0xd0,0x80,0x51,0x6a}} 
+ 
+typedef struct {
+ uint32_t MaxMode;
+ uint32_t Mode;
+ EFI_GRAPHICS_OUTPUT_MODE_INFORMATION *Info;
+ UINTN SizeOfInfo;
+ EFI_PHYSICAL_ADDRESS FrameBufferBase;
+ UINTN FrameBufferSize;
+} EFI_GRAPHICS_OUTPUT_PROTOCOL_MODE;
+
+typedef struct EFI_GRAPHICS_OUTPUT_PROTOCOL {
+    EFI_GRAPHICS_OUTPUT_PROTOCOL_QUERY_MODE     QueryMode;
+    EFI_GRAPHICS_OUTPUT_PROTOCOL_SET_MODE       SetMode;
+    EFI_GRAPHICS_OUTPUT_PROTOCOL_BLT            Blt;
+    EFI_GRAPHICS_OUTPUT_PROTOCOL_MODE           *Mode;
+} EFI_GRAPHICS_OUTPUT_PROTOCOL;

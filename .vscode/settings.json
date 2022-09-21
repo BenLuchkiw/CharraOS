@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "stddef.h": "c",
+        "kernel.h": "c",
+        "typedefs.h": "c",
+        "varargs.h": "c",
+        "stdarg.h": "c",
+        "vcruntime.h": "c",
+        "stdbool.h": "c",
+        "stivale2.h": "c",
+        "float.h": "c",
+        "corecrt_search.h": "c",
+        "stdlib.h": "c",
+        "interrupts.h": "c",
+        "string.h": "c",
+        "corecrt.h": "c",
+        "gdt.h": "c",
+        "framebuffer.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
